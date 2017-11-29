@@ -1,53 +1,110 @@
 <!DOCTYPE html>
+
 <html>
-      <head>
-            <link rel="stylesheet" type="text/css" href="cloudStyle.css">
-            <meta charset="utf-8">
-            <title>Phatty Cloudz Leadaboadz</title>
-      </head>
-      <body>
 
-            <div class="navbar" id="grad1">
-                  <a href="">Home</a>
-                  <div class="dropdown">
-                        <button class = "dropbtn">Regions<i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                             <a href="#">Africa</a>
-                             <a href="#">Asia</a>
-                             <a href="#">North America</a>
-                             <a href="#">South America</a>
-                             <a href="#">Central America</a>
-                             <a href="#">Eastern Europe</a>
-                             <a href="#">Middle East</a>
-                             <a href="#">Caribbean</a>
-                        </div>
-                  </div>
-                  <a href="about_us.html">About Us</a>
-            </div>
+<head>
+  <link rel="stylesheet" href="cloudStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+  <title>Phatty Cloudz Leadaboadz</title>
+</head>
 
-            <h1>Welcome to the Phatty Cloudz Leadaboadz</h1>
+<body>
 
-            <h3 >You think you get one Phatty Cloud? Brah put it to the test against other vapahs from around the globe! Lets all vape together and make one Phatty Cloud!</h3>
+  <div class="ui borderless inverted top fixed menu">
+    <div class="ui container">
+      <a href="index.html" class="item">
+        Home
+      </a>
+      <div class="ui dropdown item">
+        <div class="text">Regions</div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <a href="#" class="item" style="color: black;">Africa</a>
+          <a href="#" class="item" style="color: black;">Asia</a>
+          <a href="#" class="item" style="color: black;">North America</a>
+          <a href="#" class="item" style="color: black;">South America</a>
+          <a href="#" class="item" style="color: black;">Central America</a>
+          <a href="#" class="item" style="color: black;">Eastern Europe</a>
+          <a href="#" class="item" style="color: black;">Middle East</a>
+          <a href="#" class="item" style="color: black;">Carribean</a>
+        </div>
+      </div>
+      <a href="about_us.html" class="item">
+        About Us
+      </a>
+    </div>
+  </div>
 
-            <img src="https://ci.memecdn.com/9599831.jpg" alt="Vape Nation Mascot" width="405px" height="405px">
+  <div class="grad-background" style="padding-top: 80px;">
+    <div class="ui container colorblocktop">
 
-            <p>Please enter the following information inside of form below to add your phatty cloud to our leaderboards and calculate your official phattys rating:</p>
-            <div class="container">
-                  <form id="phattyForm" action="">
-                        Username: <input type="text" name="userName"><br>
-                        Voltage: <input type="number" name="voltage"><br>
-                        Drag Time (seconds): <input type="number" name="dragTime"><br>
-                        Temperature: <input type="number" name="temp"><br>
-                        Weather: <select name="weather">
-                              <option value="">Select Weather</option>
-                              <option value="rainy">Rainy</option>
-                              <option value="sunny">Sunny</option>
-                              <option value="stormy">Stormy</option>
-                              <option value="cloudy">Cloudy</option>
-                        </select>
-                        Pressure: <!-- We need to have an API that tells the user what the air pressure is at their current location-->
-                        Altitude: <!-- We need to have an API that tells the user what the altitude is at their current location-->
-                  </form>
-            </div>
-      </body>
+        <div class="center text" style="color: #FFF">
+          <p>
+          <h1>Welcome to the Phatty Cloudz Leadaboadz</h1>
+          <h3 >You think you get one Phatty Cloud? Brah put it to the test against other vapahs from around the globe! Lets all vape together and make one Phatty Cloud!</h3>
+          <p><p><p>
+        </div>
+
+        <img class="ui centered large image" src="https://ci.memecdn.com/9599831.jpg" alt="Vape Nation Mascot">
+
+    </div>
+  </div>
+
+  <div class="ui container">
+    <div class="center text">
+    Please enter the following information inside of form below to add your phatty cloud to our leaderboards and calculate your official phattys rating:
+    <p><p><p>
+    </div>
+
+      <form class="ui form" id="phattyForm">
+
+        <div class="two fields">
+          <div class="field">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="username">
+          </div>
+          <div class="field">
+            <label>Voltage</label>
+            <input type="number" name="voltage" placeholder="voltage">
+          </div>
+        </div>
+
+        <div class="two fields">
+          <div class="field">
+            <label>Drag Time (seconds)</label>
+            <input type="number" name="dragtime">
+          </div>
+          <div class="field">
+            <label>Temperature</label>
+            <input type="number" name="temperature">
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Weather</label>
+          <select class="ui fluid dropdown" name="weather">
+            <option value="">select weather</option>
+            <option value="rainy">Rainy</option>
+            <option value="sunny">Sunny</option>
+            <option value="stormy">Stormy</option>
+            <option value="cloudy">Cloudy</option>
+          </select>
+        </div>
+        Pressure: <!-- We need to have an API that tells the user what the air pressure is at their current location-->
+        Altitude: <!-- We need to have an API that tells the user what the altitude is at their current location-->
+      </form>
+
+  </div>
+
+
+<script>
+$('.ui.dropdown')
+  .dropdown()
+;
+</script>
+
+</body>
 </html>

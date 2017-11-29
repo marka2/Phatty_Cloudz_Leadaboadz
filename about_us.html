@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html>
       <head>
+            <link rel="stylesheet" href="cloudStyle.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+            <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+            <title>About Us</title>
             <link rel="stylesheet" type="text/css" href="cloudStyle.css">
             <meta charset="utf-8">
             <title></title>
       </head>
       <body>
-            <div class="navbar" id="grad1">
-                  <a href="index.html">Home</a>
-                  <div class="dropdown">
-                        <button class = "dropbtn">Regions<i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                             <a href="#">Africa</a>
-                             <a href="#">Asia</a>
-                             <a href="#">North America</a>
-                             <a href="#">South America</a>
-                             <a href="#">Central America</a>
-                             <a href="#">Eastern Europe</a>
-                             <a href="#">Middle East</a>
-                             <a href="#">Caribbean</a>
-                        </div>
-                  </div>
-                  <a href="#">About Us</a>
+        <div class="ui borderless inverted top fixed menu">
+          <div class="ui container">
+            <a href="index.html" class="item">
+              Home
+            </a>
+            <div class="ui dropdown item">
+              <div class="text">Regions</div>
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <a href="#" class="item" style="color: black;">Africa</a>
+                <a href="#" class="item" style="color: black;">Asia</a>
+                <a href="#" class="item" style="color: black;">North America</a>
+                <a href="#" class="item" style="color: black;">South America</a>
+                <a href="#" class="item" style="color: black;">Central America</a>
+                <a href="#" class="item" style="color: black;">Eastern Europe</a>
+                <a href="#" class="item" style="color: black;">Middle East</a>
+                <a href="#" class="item" style="color: black;">Carribean</a>
+              </div>
             </div>
-            <img class="banner" src="https://i.ytimg.com/vi/dDkfMxBGZ40/maxresdefault.jpg" alt="" />
+            <a href="about_us.html" class="item">
+              About Us
+            </a>
+          </div>
+        </div>
 
-            <h1>About Us:</h1>
-            <p>
+              <img class="ui fluid image"  src="https://i.ytimg.com/vi/dDkfMxBGZ40/maxresdefault.jpg" alt="" />
+
+
+            <h1 class="ui header">About us</h1>
+            <h3 class="ui header">
                   The Phatty Cloudz Leadaboadz is a revolutionary take on competitive vaping. Vapers from around the world can come together as a community and compare their phatty cloudz with each other. We provide leaderboards for various regions of the world. Not only that but we have also accounted for various conditions that may affect the measurements of phatty cloudz. Our innovative Phatty Cloudz Algorithm was created in September 2017 that allows us to give each phatty cloud a Phattys Rating. This Phattys Ratting is scaled from 1-10. 10 representing a world-class phatty cloud and 1 representing a below average cloud not even worth mentioning. Lets all come together and put aside our differences to make one Phatty Cloud!
-            </p>
+            </h3>
 
-            <h2>FAQ</h2>
-            <pre>
+            <h3 class="ui header">FAQ</h3>
+            <h4 class="ui header faq">
                   Q) What is a Phatty Cloud?
-
+                  <br>
                   A) A Phatty Cloud is a cloud of vapor that is produced from an individual using a vapor cigarette (AKA a Vape).
-
-
+                  <br>
                   Q) How is the Phattys Rating calculated?
-
+                  <br>
                   A) That is a top secret formula locked up in the Himalayan Mountains.
-            </pre>
+                  <br>
+            </h4>
+            <script>
+            $('.ui.dropdown')
+              .dropdown()
+            ;
+            </script>
       </body>
 </html>
