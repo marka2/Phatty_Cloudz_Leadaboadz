@@ -22,14 +22,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_info.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add_info.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add_info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            <state relative-caret-position="187">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding>
-                <marker date="1512471153683" expanded="true" signature="704:1327" ph="..." />
-                <marker date="1512471153683" expanded="true" signature="759:1315" ph="..." />
+                <marker date="1512474274474" expanded="true" signature="726:736" ph="..." />
+                <marker date="1512474274474" expanded="true" signature="726:1446" ph="..." />
+                <marker date="1512474274474" expanded="true" signature="781:1438" ph="..." />
               </folding>
             </state>
           </provider>
@@ -38,14 +39,14 @@
       <file leaf-file-name="read.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/read.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            <state relative-caret-position="1344">
+              <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloudStyle.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cloudStyle.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloudStyle.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
@@ -327,8 +328,9 @@
         <state relative-caret-position="42">
           <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding>
-            <marker date="1512471153683" expanded="true" signature="704:1327" ph="..." />
-            <marker date="1512471153683" expanded="true" signature="759:1315" ph="..." />
+            <marker date="1512474274474" expanded="true" signature="726:736" ph="..." />
+            <marker date="1512474274474" expanded="true" signature="726:1446" ph="..." />
+            <marker date="1512474274474" expanded="true" signature="781:1438" ph="..." />
           </folding>
         </state>
       </provider>
@@ -358,22 +360,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/connect.php.html" />
-    <entry file="file://$PROJECT_DIR$/cloudStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/read.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/connect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -392,12 +378,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/add_info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        <state relative-caret-position="187">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
-            <marker date="1512471153683" expanded="true" signature="704:1327" ph="..." />
-            <marker date="1512471153683" expanded="true" signature="759:1315" ph="..." />
+            <marker date="1512474274474" expanded="true" signature="726:736" ph="..." />
+            <marker date="1512474274474" expanded="true" signature="726:1446" ph="..." />
+            <marker date="1512474274474" expanded="true" signature="781:1438" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloudStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
