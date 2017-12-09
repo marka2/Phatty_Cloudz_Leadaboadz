@@ -1,25 +1,6 @@
 <?php include('connect.php'); ?>
 
 
-<?php
-$rating = $_POST['rating'];
-$username = $_POST['username'];
-$distance = $_POST['distance'];
-$voltage = $_POST['voltage'];
-$amps = $_POST['dragtime'];
-$temp = $_POST['temperature'];
-$weather = $_POST['weather'];
-$pressure = $_POST['pressure'];
-$altitude = $_POST['altitude'];
-$dragtime = $_POST['dragtime'];
-
-$sql = "INSERT INTO FattyCloudLeaderboard (rating, userName, distance, voltage, amps, dragTime, temperature, weather, pressure, altitude) VALUES ('".$rating."', '".$username."', '".$distance."', '".$voltage."', '".$amps."', '".$dragtime."', '".$temp."', '".$weather."', '".$pressure."', '".$altitude."')";
-$result = mysql_query($sql, $conn);
-echo $sql;
-//echo $result;
-header("location: read.php");
-?>
-
 <script>
 $(document).ready(function(){
     $('#create').on('submit', function(){
@@ -28,6 +9,7 @@ $(document).ready(function(){
 });
 
 function calculateRating() {
+    var rating = 0;
     var distance = document.getElementById('distance').value;
     var voltage = document.getElementById('voltage').value;
     var amps = document.getElementById('amps').value;
@@ -36,14 +18,28 @@ function calculateRating() {
     var weather = document.getElementById('weather').value;
     var pressure = document.getElementById('pressure').value;
     var altitude = document.getElementById('altitude').value;
-    alert(altitude);
+    
+
+    if (amps< 2 && voltage < 1.0 && dragtime < 5 && temperature < 100 && pressure < 30 && altitude < 300) { 
+        rating = 0;
+    }
+                       $.ajax({
+                    type: "POST",
+                    url: 'add_info2.php',
+                    data: { "rating" : rating },
+                    success: function(data)
+                    {
+                  
+                    }
+                    });
+
 }
 
 </script>
 
 <html>
 <form id="create" action="add_info.php" method="POST">
-  rating: <input type="text" name="rating"><br>
+  <input type="hidden" name="rating"><br>
   <!--Username input field is temporary this field should be populated based off user login info--->
   Username: <input type="text" id="username" name="username"><br>
   Distance: <input type="text" id="distance" name="distance"><br>
