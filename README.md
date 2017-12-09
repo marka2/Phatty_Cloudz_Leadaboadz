@@ -5,9 +5,9 @@
 
 December 9, 2017 @1:03AM
 
--Working: Add info, View Info, Signup, Login(query only)
--Partially Working: Rating algorithm on submit, Delete (need to delete on id)
--To do: Update function, Add styling on all pages
+<p>-Working: Add info, View Info, Signup, Login(query only)</p> 
+<p>-Partially Working: Rating algorithm on submit, Delete (need to delete on id)</p>
+<p>-To do: Update function, Add styling on all pages</p>
 
 Extra- Add AJAX for live editing?
 
