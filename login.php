@@ -2,16 +2,20 @@
 
 <?php
 
+$_SESSION['loginok'] = 0;
+
+if(isset($_POST['Submit'])) {
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$sql = "SELECT * FROM `users` WHERE `userName` = '".$username."' AND `password` = '".$password."' LIMIT 1 ";
+$sql = "SELECT * FROM users WHERE userName = '".$username."' AND password = '".$password."' LIMIT 1 ";
 
-echo $sql;
 $result = mysql_query($sql, $conn);
-
-if($result) {
-    echo "Yay login info is correct";
+if ($row = mysql_fetch_assoc($result)) {
+    $id = $row['id'];
+    $_SESSION['loginok'] = 1;
+    echo "<script type='text/javascript'>  window.location='read.php?id=".$row['id']."'; </script>";
+}
 }
 ?>
 <html>
@@ -113,5 +117,5 @@ $('.ui.dropdown')
 Username: <input type="text" id="username" name="username"><br>
 Password: <input type="text" id="password" name="password"><br>
 <input type="submit" name="Login">
-</form> -->
+</form>
 </html>

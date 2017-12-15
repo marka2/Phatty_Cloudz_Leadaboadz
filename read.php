@@ -1,4 +1,12 @@
-<?php include('connect.php'); ?>
+<?php include('connect.php');
+
+session_start();
+
+if ($_SESSION['loginok'] == 0) {
+      header("Location: http://www.jleong8.ics415/phatty/login.php");
+}
+
+?>
 
 <style>
     	table {
