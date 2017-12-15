@@ -1,167 +1,273 @@
 <!DOCTYPE html>
-
 <html>
-<<<<<<< HEAD
 
 <head>
+
+  <title>Welcome to da Leaderboardz</title>
   <link rel="stylesheet" href="cloudStyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
-  <title>Phatty Cloudz Leadaboadz</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+
+  <style type="text/css">
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+
+    .ui.vertical.stripe .button+h3,
+    .ui.vertical.stripe p+h3 {
+      margin-top: 3em;
+    }
+
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+  </style>
+
+  <script>
+    $(document)
+      .ready(function() {
+        // fix menu when passed
+        $('.masthead')
+          .visibility({
+            once: false,
+            onBottomPassed: function() {
+              $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function() {
+              $('.fixed.menu').transition('fade out');
+            }
+          });
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item');
+      });
+
+  </script>
+
 </head>
 
 <body>
-
-  <div class="ui borderless inverted top fixed menu">
+  <!-- Following Menu -->
+  <div class="ui large top fixed hidden menu">
     <div class="ui container">
-      <a href="index.html" class="item">
-        Home
-      </a>
-      <div class="ui dropdown item">
-        <div class="text">Regions</div>
-        <i class="dropdown icon"></i>
-        <div class="menu">
-          <a href="#" class="item" style="color: black;">Africa</a>
-          <a href="#" class="item" style="color: black;">Asia</a>
-          <a href="#" class="item" style="color: black;">North America</a>
-          <a href="#" class="item" style="color: black;">South America</a>
-          <a href="#" class="item" style="color: black;">Central America</a>
-          <a href="#" class="item" style="color: black;">Eastern Europe</a>
-          <a href="#" class="item" style="color: black;">Middle East</a>
-          <a href="#" class="item" style="color: black;">Carribean</a>
+      <a class="item">Home</a>
+      <a href="about_us.html"class="item">About Us</a>
+      <a class="item">Regions</a>
+
+      <div class="right menu">
+        <div class="item">
+          <a href="login.php" class="ui button">Log in</a>
+        </div>
+        <div class="item">
+          <a href="sign-up.php" class="ui primary button">Sign Up</a>
         </div>
       </div>
-      <a href="about_us.html" class="item">
-        About Us
-      </a>
     </div>
   </div>
 
-  <div class="grad-background" style="padding-top: 80px;">
-    <div class="ui container colorblocktop">
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu">
+    <a class="item">Home</a>
+    <a class="item">About Us</a>
+    <a class="item">Regions</a>
 
-        <div class="center text" style="color: #FFF">
-          <p>
-          <h1>Welcome to the Phatty Cloudz Leadaboadz</h1>
-          <h3 >You think you get one Phatty Cloud? Brah put it to the test against other vapahs from around the globe! Lets all vape together and make one Phatty Cloud!</h3>
-          <p><p><p>
-        </div>
-
-        <img class="ui centered large image" src="https://ci.memecdn.com/9599831.jpg" alt="Vape Nation Mascot">
-
-    </div>
-  </div>
-
-  <div class="ui container">
-    <div class="center text">
-    Please enter the following information inside of form below to add your phatty cloud to our leaderboards and calculate your official phattys rating:
-    <p><p><p>
-    </div>
-
-      <form class="ui form" id="phattyForm">
-
-        <div class="two fields">
-          <div class="field">
-            <label>Username</label>
-            <input type="text" name="username" placeholder="username">
-          </div>
-          <div class="field">
-            <label>Voltage</label>
-            <input type="number" name="voltage" placeholder="voltage">
-          </div>
-        </div>
-
-        <div class="two fields">
-          <div class="field">
-            <label>Drag Time (seconds)</label>
-            <input type="number" name="dragtime">
-          </div>
-          <div class="field">
-            <label>Temperature</label>
-            <input type="number" name="temperature">
-          </div>
-        </div>
-
-        <div class="field">
-          <label>Weather</label>
-          <select class="ui fluid dropdown" name="weather">
-            <option value="">select weather</option>
-            <option value="rainy">Rainy</option>
-            <option value="sunny">Sunny</option>
-            <option value="stormy">Stormy</option>
-            <option value="cloudy">Cloudy</option>
-          </select>
-        </div>
-        Pressure: <!-- We need to have an API that tells the user what the air pressure is at their current location-->
-        Altitude: <!-- We need to have an API that tells the user what the altitude is at their current location-->
-      </form>
-
+    <a href="login.php" class="item">Login</a>
+    <a href="sign-up.php" class="item">Signup</a>
   </div>
 
 
-<script>
-$('.ui.dropdown')
-  .dropdown()
-;
-</script>
+  <!-- Page Contents -->
+  <div class="pusher">
+    <div class="ui inverted vertical masthead center aligned segment">
+
+      <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+          <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+          <a class="item">Home</a>
+          <a class="item">About Us</a>
+          <a class="item">Regions</a>
+
+          <div class="right item">
+            <a href="login.php" class="ui inverted button">Log in</a>
+            <a href="sign-up.php" class="ui inverted button">Sign Up</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui text container" style="animation-name: fadeInDown; animation-duration: 3s;">
+        <h1 class="ui inverted header">
+        Welcome to the Phatty Cloudz Leadaboadz!
+      </h1>
+        <h3></h3><br>
+        <div class="ui huge primary button" style="color: white;"><a href="add_info2.php" style="color: white;">Phatty Ratingz</a><i class="right arrow icon"></i></div>
+      </div>
+
+    </div>
+<div class="grad-background">
+    <div class="ui vertical stripe segment">
+      <div class="ui middle aligned stackable grid container">
+        <div class="row">
+          <div class="eight wide column">
+            <h3 class="ui header" style="color: white;">You think you get one Phatty Cloud? Brah put it to the test against other vapahs from around the globe! </h3>
+            <p></p>
+            <h3 class="ui header" style="color: white;">Lets all vape together and make one Phatty Cloud!</h3>
+            <p style="color: white;">Yes that's right, even clouds can be bioengineered together</p>
+          </div>
+          <div class="six wide right floated column">
+            <img src="https://ci.memecdn.com/9599831.jpg" alt="Vape Nation Mascot" class="ui large rounded image">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <div class="ui vertical stripe quote segment" style="background-color: #f6f7f9;">
+      <div class="ui equal width stackable internally celled grid">
+        <div class="center aligned row">
+          <div class="column">
+            <h3>"What a Community"</h3>
+            <p>That is what they all say about us</p>
+          </div>
+          <div class="column">
+            <h3>"I've never been happier"</h3>
+            <p>
+              <img src="brandon.png" class="ui tiny avatar image" style="opacity: 0.8;"> satisfied phatty member
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui vertical stripe segment" style="background-color: #f6f7f9; min-height: 600px;">
+      <div class="ui text container">
+        <img class="ui left floated rounded image" src="https://images.unsplash.com/photo-1507965613665-5fbb4cbb8399?auto=format&fit=crop&w=800&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" style="opacity: 0.8;">
+        <h3 class="ui header">"Changed the game"</h3>
+        <p>Learn how to master the art of Phatty Cloudz.</p>
+        <!--
+        <h4 class="ui horizontal header divider">
+        <a href="#">Case Studies</a>
+      </h4>
+        <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
+        <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
+        <a class="ui large button">I'm Still Quite Interested</a>-->
+      </div>
+    </div>
+
+
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="three wide column">
+            <h4 class="ui inverted header">About</h4>
+            <div class="ui inverted link list">
+              <a href="developers.html" class="item">Developers</a>
+              <a href="#" class="item">Contact Us</a>
+              <a href="#" class="item">Religious Ceremonies</a>
+              <a href="#" class="item">Gazebo Plans</a>
+            </div>
+          </div>
+          <div class="three wide column">
+            <h4 class="ui inverted header">Services</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">Phattys Ratingz</a>
+              <a href="#" class="item">DNA FAQ</a>
+              <a href="#" class="item">How To Access</a>
+              <a href="#" class="item">Favorite X-Men</a>
+            </div>
+          </div>
+          <div class="seven wide column">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </body>
-=======
-      <head>
-            <link rel="stylesheet" type="text/css" href="cloudStyle.css">
-            <meta charset="utf-8">
-            <title>Phatty Cloudz Leadaboadz</title>
-      </head>
-      <body>
 
-            <div class="navbar" id="grad1">
-                  <a href="">Home</a>
-                   <a href="login.php">Login</a>
-                  <a href="sign-up.php">Sign Up</a>
-                  <div class="dropdown">
-                        <button class = "dropbtn">Regions<i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                             <a href="#">Africa</a>
-                             <a href="#">Asia</a>
-                             <a href="#">North America</a>
-                             <a href="#">South America</a>
-                             <a href="#">Central America</a>
-                             <a href="#">Eastern Europe</a>
-                             <a href="#">Middle East</a>
-                             <a href="#">Caribbean</a>
-                        </div>
-                  </div>
-                  <a href="about_us.html">About Us</a>
-                  <a href="add_info.php">Add Info</a>
-                  <a href="read.php">View Info</a>
-            </div>
-
-            <h1>Welcome to the Phatty Cloudz Leadaboadz</h1>
-
-            <h3 >You think you get one Phatty Cloud? Brah put it to the test against other vapahs from around the globe! Lets all vape together and make one Phatty Cloud!</h3>
-
-            <img src="https://ci.memecdn.com/9599831.jpg" alt="Vape Nation Mascot" width="405px" height="405px">
-
-            <p>Please enter the following information inside of form below to add your phatty cloud to our leaderboards and calculate your official phattys rating:</p>
-            <div class="container">
-                  <form id="phattyForm" action="">
-                        Username: <input type="text" name="userName"><br>
-                        Voltage: <input type="number" name="voltage"><br>
-                        Drag Time (seconds): <input type="number" name="dragTime"><br>
-                        Temperature: <input type="number" name="temp"><br>
-                        Weather: <select name="weather">
-                              <option value="">Select Weather</option>
-                              <option value="rainy">Rainy</option>
-                              <option value="sunny">Sunny</option>
-                              <option value="stormy">Stormy</option>
-                              <option value="cloudy">Cloudy</option>
-                        </select>
-                        Pressure: <!-- We need to have an API that tells the user what the air pressure is at their current location-->
-                        Altitude: <!-- We need to have an API that tells the user what the altitude is at their current location-->
-                  </form>
-            </div>
-      </body>
->>>>>>> master
 </html>
