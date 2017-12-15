@@ -74,7 +74,7 @@ $('.ui.dropdown')
                   <input type="text" id="password" name="password" placeholder="Password">
                 </div>
               </div>
-              <input type="submit" name="Signup">
+              <input type="submit" name="Signup" style="background-color: #2f3946;">
             </div>
           </form>
         </div>
@@ -89,18 +89,12 @@ $('.ui.dropdown')
           <h4 class="ui inverted header">About</h4>
           <div class="ui inverted link list">
             <a href="developers.html" class="item">Developers</a>
-            <a href="#" class="item">Contact Us</a>
-            <a href="#" class="item">Religious Ceremonies</a>
-            <a href="#" class="item">Gazebo Plans</a>
           </div>
         </div>
         <div class="three wide column">
           <h4 class="ui inverted header">Services</h4>
           <div class="ui inverted link list">
             <a href="#" class="item">Phattys Ratingz</a>
-            <a href="#" class="item">DNA FAQ</a>
-            <a href="#" class="item">How To Access</a>
-            <a href="#" class="item">Favorite X-Men</a>
           </div>
         </div>
       </div>
