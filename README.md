@@ -3,6 +3,14 @@
 
 <h2>Status so far</h2>
 
+December 14, 2017 @6:30pm
+ToDO: Style read.php
+      Login page, password is not hashed
+      Logout button, session_destroy (Mickey)
+      Region selector (add column for region, run sql to pull all by region)
+      Change index.html to index.php (Mickey)
+      
+      
 December 9, 2017 @1:03AM
 
 <p>-Working: Add info, View Info, Signup, Login(query only)</p> 
