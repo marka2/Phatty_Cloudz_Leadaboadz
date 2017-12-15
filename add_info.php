@@ -21,6 +21,7 @@ function calculateRating($amps, $voltage, $dragtime, $temperature, $pressure, $a
     if ($amps >= 20 && $amps <= 40 && $voltage >= 6.0 && $voltage <= 9.0 && $dragtime >= 3 && $dragtime <= 6 && $temperature >= 375 && $temperature <= 400 && $pressure >= 100 && $pressure <= 150 && $altitude >= 1000 && $altitude <= 2000) {
         $rating = 9;
     }
+<<<<<<< HEAD
 
     if ($amps >= 40 && $amps <= 60 && $voltage >= 9.0 && $voltage <= 12.0 && $dragtime >= 6 && $dragtime <= 10 && $temperature >= 350 && $temperature <= 375 && $pressure >= 150 && $pressure <= 200 && $altitude >= 1000 && $altitude <= 2000) {
         $rating = 8;
@@ -41,6 +42,28 @@ function calculateRating($amps, $voltage, $dragtime, $temperature, $pressure, $a
         $rating = 4;
     }
 
+=======
+
+    if ($amps >= 40 && $amps <= 60 && $voltage >= 9.0 && $voltage <= 12.0 && $dragtime >= 6 && $dragtime <= 10 && $temperature >= 350 && $temperature <= 375 && $pressure >= 150 && $pressure <= 200 && $altitude >= 1000 && $altitude <= 2000) {
+        $rating = 8;
+    }
+
+    if ($amps >= 60 && $amps <= 90 && $voltage >= 12.0 && $voltage <= 15.0 && $dragtime >= 10 && $dragtime <= 12 && $temperature >= 350 && $temperature <= 375 && $pressure >= 150 $pressure <= 300 && $altitude >= 1000 && $altitude <= 2000) {
+        $rating = 7;
+    }
+
+    if ($amps >= 60 && $amps <= 90 && $voltage >= 15.0 && $voltage <= 17.0 && $dragtime >= 10 && $dragtime <= 12 && $temperature >= 350 && $temperature <= 375 && $pressure >= 300 && $pressure <= 400 && $altitude >= 1000 && $altitude <= 2000) {
+        $rating = 6;
+    }
+
+    if ($amps >= 10 && $amps <= 15 && $voltage >= 5.0 && $voltage <= 5.3 && $dragtime >= 3 && $dragtime <= 5 && $temperature >= 350 && $temperature <= 365 && $pressure >= 75 && $pressure <= 100 && $altitude >= 1000 && $altitude <= 2000) {
+        $rating = 5;
+    }
+    if ($amps >= 7 && $amps <= 10 && $voltage >= 4.5 && $voltage <= 5.0 && $dragtime >= 10 && $dragtime <= 12 && $temperature >= 250 && $temperature <= 350 && $pressure >= 50 && $pressure <= 75 && $altitude >= 500 && $altitude <= 1000) {
+        $rating = 4;
+    }
+
+>>>>>>> semantic-phatty-cloudz
     if ($amps >= 5 && $amps <= 7 && $voltage >= 3.5 && $voltage <= 4.5 && $dragtime >= 10 && $dragtime <= 12 && $temperature >= 200 && $temperature <= 250 && $pressure >= 40 && $pressure <= 50 && $altitude >= 450 && $altitude <= 500) {
         $rating = 3;
     }
@@ -71,6 +94,7 @@ echo $sql;
 
 ?>
 
+<<<<<<< HEAD
 
 <html>
 <form id="create" action="add_info.php" method="POST">
@@ -87,6 +111,9 @@ echo $sql;
   Altitude: <input type="text" id="altitude" name="altitude"><br>
   <input type="submit" name="submit">
 </form>
+=======
+</script>
+>>>>>>> semantic-phatty-cloudz
 
 <html>
 <link rel="stylesheet" href="cloudStyle.css">
